@@ -1,1 +1,1 @@
-Increment Decrement countar App - with refreshProof / localStorage
+Increment Decrement counter App - with refreshProof / localStorage

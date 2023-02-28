@@ -7,17 +7,17 @@ let count = 0
 if(JSON.parse(countFromStorage)) count = countFromStorage
 textEl.textContent = count
 
-incBtn.addEventListener("click" , function(){
+incBtn.addEventListener("click" , () => {
     textEl.textContent = ++count
     localStorage.setItem("count" , JSON.stringify(count))
 })
 
-decBtn.addEventListener("click" , function(){
+decBtn.addEventListener("click" , () => {
     textEl.textContent = --count
     localStorage.setItem("count" , JSON.stringify(count))
 })
 
-textEl.addEventListener("dblclick" , function(){
+textEl.addEventListener("dblclick" , () => {
     localStorage.clear()
     count = 0
     textEl.textContent = count ;
